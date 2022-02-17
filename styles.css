@@ -100,6 +100,17 @@ a {
   border-color: black;
 }
 
+.resume-button {
+  border: 1px darkslategray solid;
+  border-radius: 3px;
+  padding-bottom: 5px;
+  background-color: peachpuff;
+}
+
+.resume-button:hover {
+  background-color: pink;
+}
+
 .content {
   margin: auto;
   max-width: 80vw;
@@ -125,13 +136,20 @@ a {
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .scroll-in-container {
-    animation: wipe-enter 1s 1;
-  }
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+.scroll-in-container-animation {
+  animation: wipe-enter 1s 1;
 }
 
 .card {
