@@ -19,16 +19,13 @@ hr {
 }
 
 h2, h3 {
-  font-weight: 500;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
+  margin-top: 0px;
   background-color: inherit;
 }
 
 h1 {
   font-weight: 500;
-  font-variant: small-caps;
-  font-size: 40px;
+  font-size: 70px;
 }
 
 p {
@@ -45,13 +42,6 @@ ul, ol {
   font-family: inherit;
 }
 
-.sidebar ul {
-  margin-bottom: 0.5em;
-}
-
-.sidebar ul li:hover {
-  color: salmon;
-}
 
 li {
   padding: 5px;
@@ -64,10 +54,6 @@ a {
   background-color: inherit;
   font-family: "Open Sans", sans-serif;
   color: inherit;
-}
-
-img {
-  margin: 50px;
 }
 
 .embedded-link {
@@ -90,6 +76,9 @@ img {
   display: flex;
   justify-content: space-around;
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  border-bottom: 1px solid darkslategray;
 }
 
 .nav-button {
@@ -111,70 +100,53 @@ img {
   border-color: black;
 }
 
-@media (max-width: 1300px), (max-height: 690px) {
-  .sidebar {
-    display: none;
-  }
-}
-
-.sidebar {
-  background-color: transparent;
-  padding: 8px;
-  width: max-content;
-  position: sticky;
-  left: 5vw;
-  margin-top: 30vh;
-  bottom: 30vh;
-}
-
-.sidebar-header {
-  color: black ;
-  background-color: inherit;
-  font-variant: small-caps;
-  font-weight: 500;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-.sidebar-list {
-  background-color: inherit;
-}
-
 .content {
   margin: auto;
-  max-width: 55%;
+  max-width: 80vw;
   display: inline;
+  padding-bottom: 80px;
 }
 
 .back-to-top {
   position: fixed;
   bottom: 1%;
-  right: 10%;
-  font-variant: small-caps;
-  font-size: 15px;
+  right: 1%;
+  margin: 50px;
 }
 
-td, th {
-  border-color: darkslategrey;
-  border: 1px solid darkslategrey;
-  padding: 5px 15px;
-  width: fit-content;
-  background-color: inherit;
+.me-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-th {
-  background-color: mistyrose;
-  padding: 15px 0px;
+.scroll-in-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-table {
-  border-collapse: collapse;
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-in-container {
+    animation: wipe-enter 1s 1;
+  }
 }
 
-tr:nth-child(odd) {
-  background: rgb(255, 251, 247);
+.card {
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-tr:nth-child(even) {
-  background: rgb(247, 252, 255);
+.contact-link {
+  padding-left: 10px;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

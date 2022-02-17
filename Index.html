@@ -1,37 +1,126 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Skincare basics</title>
+    <title>Christina Lu</title>
     <link rel="icon" type="image/png" href="Assets/flower-emoji.png">
     <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ed54e290b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <img class="header" src="Assets/Banner.png">
-    <hr>
     <div class="nav-bar">
-      <a class="nav-button nav-button-selected" href="Index.html">home</a>
-      <a class="nav-button" href="Overview.html">overview</a>
-      <a class="nav-button" href="./Cleanser.html">cleanser</a>
-      <a class="nav-button" href="./Moisturizer.html">moisturizer</a>
-      <a class="nav-button" href="./Sunscreen.html">sunscreen</a>
+      <a class="nav-button" href="#top">about</a>
+      <a class="nav-button" href="#experience">experience</a>
+      <a class="nav-button" href="#projects">projects</a>
+      <a class="nav-button" href="Assets/Christina_Lu_Resume.pdf" target="_blank">resume</a>
+      <!-- <a class="nav-button" href="#hobbies">hobbies</a> -->
     </div>
-    <hr>
-    
     <div class="content">
-      <p>
-        <br>
-        Welcome to Skincare Basics with Christina. 
-      </p>
-      <p>
-        Let's talk skincare! There are 3 simple steps to start with when building a new skincare routine. To get started, jump over to the 
-        <a class="embedded-link" href="./Overview.html">overview</a> tab. You can also navigate through this guide using the tabs above! 
-        I hope this guide helps you through your new skincare journey.
-      </p>
-      <img src="Assets/hamtaro.gif">
+      <div id="top">
+        <div class="me-wrapper">
+          <img src="Assets/hamtaro.gif">
+          <div>
+            <h1>Hi! I'm Christina</h1>
+            <p>A 4th year Software Engineering student at the University of Calgary.</p>
+            <i class="fa-solid fa-envelope fa-xl"></i><a class="contact-link" href="mailto:lu.christina@outlook.com">lu.christina@outlook.com</a><br>
+            <i class="fa-brands fa-github-square fa-xl"></i><a class="contact-link" href="https://github.com/christinaluser/" target="_blank">christinaluser</a>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div id="experience">
+        
+        <h1>
+          Experience
+        </h1>
+        <div class="card">
+          <h2>Student Software Developer at Jori International / Open Border Technologies</h2>
+          <p>
+            From August 2020 to September 2021, I worked at Jori International, a Calgary based freight forwarding company, as a student developer.
+            I assisted in the development of a web‑based freight forwarding solution using Angular, C#, and MongoDB.
+            During my time there I was able to work on a variety of projects ranging from a customer sign up wizard, integrating quoting and tracking API's, and a Shopify app for stores to get quotes
+          </p>
+        </div>
+
+        <!--signup wizard sc-->
+
+      </div>
+
+      <div id="projects">
+        <h1>
+          Projects
+        </h1>
+        <div class="projects-wrapper">
+
+          <div class="scroll-in-container">
+            <img src="Assets/Inkyio3.png" width="40%">
+            <div class="card">
+              <h2>Inky.io</h2>
+              <p>A web‑based multiplayer Pictionary game.</p>
+              <ul>
+                <li>Developed using React.js, Node.js, Socket.io, and Firebase.</li>
+                <li>Led frontend development in a team of 6 to render game components.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="scroll-in-container">
+            <div class="card">
+              <h2>Universitea</h2>
+              <p>A social media platform for university students to post messages and media, anonymously or not, to dedicated school forums.</p>
+              <ul>
+                <li>Developed using Vue 2, Node.js, Hapi.js, and MySQL.</li>
+                <li>Implements MVC and Microservices to reduce code base organizational complexity, as well as Event Sourcing and CQRS architectures to manage data.</li>
+                <li>Led frontend development to render components in the sign up process, posts, and administrator view</li>
+              </ul>
+            </div>
+            <img src="Assets/Universitea.png" width="40%">
+          </div>
+          
+          <div class="scroll-in-container">
+            <img src="Assets/CalgaryPlanit.png" width="50%">
+            <div class="card">
+              <h2>Calgary PlanIt</h2>
+              <p>A platform for travellers to create an itinerary for their trip to Calgary</p>
+              <ul>
+                <li>Developed with C# and WPF</li>
+                <li>Managed a group of 5 to develop a high fidelity prototype of the application, focusing on user experience and design</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="scroll-in-container">
+            <div class="card">
+              <h2>Chat App</h2>
+              <p>A simple chat app with various commands</p>
+              <ul>
+                <li>Developed using React and Socket.io.</li>
+                <li>Implements MVC and Microservices to reduce code base organizational complexity, as well as Event Sourcing and CQRS architectures to manage data.</li>
+                <li>Led frontend development to render components in the sign up process, posts, and administrator view</li>
+              </ul>
+            </div>
+            <img src="Assets/chat.png" width="30%">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div id="hobbies">
+        <h1>Hobbies</h1>
+        <div></div>
+      </div> -->
+      <!-- <div id="contact">
+        <h1>Contact me</h1>
+        
+      </div> -->
+
+    </div>
+
     <a href="#top">
       <img class="back-to-top" alt="back to top" src="./Assets/ArrowUp.png" width="20">
     </a>
+
   </body>
 </html>
