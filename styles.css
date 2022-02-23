@@ -86,9 +86,6 @@ a {
   color: inherit;
 }
 
-.embedded-link {
-  color: #ff9900;
-}
 
 .embedded-link:hover {
   color: salmon;
@@ -123,7 +120,7 @@ a {
 }
 
 .nav-button:hover {
-  border-color: palevioletred;
+  border-color: darkslategray;
 }
 
 .nav-button-selected {
@@ -138,7 +135,8 @@ a {
 }
 
 .resume-button:hover {
-  background-color: rgb(218, 154, 165);
+  /* background-color: rgb(218, 154, 165); */
+  background-color: #ffd59b;
 }
 
 .content {
