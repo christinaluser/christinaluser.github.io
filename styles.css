@@ -141,7 +141,8 @@ a {
 
 .content {
   margin: auto;
-  max-width: 85vw;
+  width: 85vw;
+  max-width: 1080px;
   display: inline;
   padding-bottom: 80px;
 }
