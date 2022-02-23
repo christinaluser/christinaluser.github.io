@@ -166,7 +166,7 @@ a {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 @keyframes enter {
@@ -190,7 +190,7 @@ a {
 .card {
   border-radius: 3px;
   padding: 20px;
-  margin: 40px 0px;
+  margin: 50px 0px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19); 
   background-color: white;
 }
