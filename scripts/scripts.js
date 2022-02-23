@@ -1,14 +1,14 @@
-const animation_observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const container = entry.target.querySelector('.scroll-in-container');
-    if (entry.isIntersecting) {
-      container.classList.add('scroll-in-container-animation');
-    }
-  });
-});
+// const animation_observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     const container = entry.target.querySelector('.scroll-in-container');
+//     if (entry.isIntersecting) {
+//       container.classList.add('scroll-in-container-animation');
+//     }
+//   });
+// });
 
-for(let i = 1; i < 6; i++)
-  animation_observer.observe(document.querySelector(`.scroll-in-container-${i}`));
+// for(let i = 1; i < 6; i++)
+//   animation_observer.observe(document.querySelector(`.scroll-in-container-${i}`));
 
 
 // const about_observer = new IntersectionObserver(entries => {
