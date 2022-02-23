@@ -4,49 +4,91 @@
     <title>Christina Lu</title>
     <link rel="icon" type="image/png" href="Assets/flower-emoji.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/jpq1brg.css">
     <script src="https://kit.fontawesome.com/8ed54e290b.js" crossorigin="anonymous"></script>
     
   </head>
   <body>
     <div class="nav-bar">
-      <a class="nav-button about-nav" href="#top">about</a>
+      <a class="nav-button about-nav" href="#about">about</a>
       <a class="nav-button experience-nav" href="#experience">experience</a>
       <a class="nav-button projects-nav" href="#projects">projects</a>
       <a class="nav-button resume-button" href="Assets/Christina_Lu_Resume.pdf" target="_blank">resume</a>
       <!-- <a class="nav-button" href="#hobbies">hobbies</a> -->
     </div>
     <div class="content">
-      <div id="top">
+      <div id="about" class="section">
         <div class="me-wrapper">
-          <img src="Assets/hamtaro.gif">
+          <!-- <img src="Assets/hamtaro.gif"> -->
           <div>
-            <h1>Hi! I'm Christina</h1>
-            <p>A 4th year Software Engineering student at the University of Calgary.</p>
-            <i class="fa-solid fa-envelope fa-xl"></i><a class="contact-link" href="mailto:lu.christina@outlook.com">lu.christina@outlook.com</a><br>
-            <i class="fa-brands fa-github-square fa-xl"></i><a class="contact-link" href="https://github.com/christinaluser/" target="_blank">christinaluser</a>
+            <h1 class="intro">Hi! I'm Christina</h1>
+            <p>I'm a 4th year Software Engineering student at the University of Calgary.</p>
+            <div class="contact">
+              <i class="fa-solid fa-envelope fa-xl contact-icon"></i>
+              <a class="contact-link" href="mailto:lu.christina@outlook.com">lu.christina@outlook.com</a>
+              <i class="fa-brands fa-github-square fa-xl contact-icon"></i>
+              <a class="contact-link" href="https://github.com/christinaluser/" target="_blank">christinaluser</a>
+            </div>
+            
           </div>
         </div>
       </div>
 
-      <div id="experience" >
+      <div id="experience" class="section">
         <h1>
           Experience
         </h1>
         <div class="card">
-          <h2>Student Software Developer at Jori International / Open Border Technologies</h2>
+          <h2>Jori International & Open Border Technologies | Student Software Developer</h2>
+          <h3>July 2020 - September 2021</h3>
           <p>
-            From August 2020 to September 2021, I worked at Jori International, a Calgary based freight forwarding company, as a student developer.
-            I assisted in the development of a web‑based freight forwarding solution using Angular, C#, and MongoDB.
-            During my time there I was able to work on a variety of projects ranging from a customer sign up wizard, integrating quoting and tracking API's, and a Shopify app for stores to get quotes
+            I worked at Jori International, a Calgary based freight forwarding company, as a student software developer assisting 
+            in the development of a web‑based freight forwarding solution using Angular, C#, and MongoDB. During my time there I 
+            was able to work on a variety of projects ranging from a customer sign up wizard, integrating quoting and tracking API's, 
+            and a Shopify app for stores to get shipping quotes for their orders.
           </p>
+        </div>
+        <div class="card">
+          
+          <div style="display: flex; flex-direction: row;">
+            <div>
+              <h2>Schulich Ignite | Mentor</h2>
+              <h3>September 2019 - April 2020</h3>
+              <p>
+                I volunteered as a mentor for the Schulich Ignite program at U of C. My role was to assist prospective students in learning 
+                how to use <a href="https://processing.org/" target="_blank">Processing</a>, a sketchbook language designed for learning 
+                how to code, as an introduction to programming. I helped students debug their code and solve problems while they created 
+                simple games as an end of program project.
+              </p>
+            </div>
+            <div class="exp-img">
+              <img src="https://schulichignite.com/img/logos/ignite.svg" width="50%" >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="display: flex; flex-direction: row;">
+            <div>
+              <h2>Robogals | Volunteer</h2>
+              <h3>January 2018 – April 2018</h3>
+              <p>
+                I volunteered in classroom workshops to encourage students ages 8‑12 to engage in STEM extracurricular activities. 
+                The program aimed to empower young girls to pursue careers in STEM
+              </p>
+            </div>
+            <div class="exp-img">
+              <img src="https://robogalsucalgary.com/wp-content/uploads/2020/04/cropped-cropped-logo_blue-1.png" width="100%">
+            </div>
+            
+          </div>
         </div>
 
         <!--signup wizard sc-->
       </div>
 
-      <div id="projects">
+      <div id="projects" class="section">
         <h1>
           Projects
         </h1>
@@ -54,12 +96,15 @@
 
           <div class="scroll-in-container-1">
             <div class="scroll-in-container">
-              <img src="Assets/Inkyio3.png" width="40%">
+              <div style="max-width: 40%;">
+                <img src="Assets/Inkyio3.png" width="100%">
+              </div>
               <div class="card">
                 <h2>Inky.io</h2>
                 <p>A web‑based multiplayer Pictionary game.</p>
                 <ul>
                   <li>Developed using React.js, Node.js, Socket.io, and Firebase.</li>
+                  <li><a href="https://github.com/justinf34/Inky.io" target="_blank">https://github.com/justinf34/Inky.io</a></li>
                   <li>Led frontend development in a team of 6 to render game components.</li>
                 </ul>
               </div>
@@ -69,46 +114,74 @@
           <div class="scroll-in-container-2">
             <div class="scroll-in-container">
               <div class="card">
-                <h2>Universitea</h2>
-                <p>A social media platform for university students to post messages and media, anonymously or not, to dedicated school forums.</p>
+                <h2>Club Dino</h2>
+                <p>A web-based multiplayer game where anyone can have the University of Calgary experience. Users can visit two iconic U of C locations - TFDL and Mac Hall - where they can chat with others, play ping pong, and study!</p>
                 <ul>
-                  <li>Developed using Vue 2, Node.js, Hapi.js, and MySQL.</li>
-                  <li>Implements MVC and Microservices to reduce code base organizational complexity, as well as Event Sourcing and CQRS architectures to manage data.</li>
-                  <li>Led frontend development to render components in the sign up process, posts, and administrator view</li>
+                  <li>Developed using Phaser and Socket.io.</li>
+                  <li><a href="https://github.com/JeremyOlea/ClubDino" target="_blank">https://github.com/JeremyOlea/ClubDino</a></li>
+                  <li>Created for CalgaryHacks 2022 🏆 Won Best UX/UI Design</li>
+                  <li>Implemented minigames and chat function</li>
                 </ul>
               </div>
-              <img src="Assets/Universitea.png" width="40%">
+              <div style="max-width: 40%; padding: 20px">
+                <img src="Assets/ClubDino.png" width="100%">
+              </div>
             </div>
           </div>
 
           <div class="scroll-in-container-3">
             <div class="scroll-in-container">
-              <img src="Assets/CalgaryPlanit.png" width="50%">
               <div class="card">
-                <h2>Calgary PlanIt</h2>
-                <p>A platform for travellers to create an itinerary for their trip to Calgary</p>
+                <h2>Universitea</h2>
+                <p>A social media platform for university students to post messages and media, anonymously or not, to dedicated school forums.</p>
                 <ul>
-                  <li>Developed with C# and WPF</li>
-                  <li>Managed a group of 5 to develop a high fidelity prototype of the application, focusing on user experience and design</li>
+                  <li>Developed using Vue 2, Node.js, Hapi.js, and MySQL.</li>
+                  <li><a href="https://github.com/oscarwong67/UniversiTea" target="_blank">https://github.com/oscarwong67/UniversiTea</a></li>
+                  <li>Implements MVC and Microservices to reduce code base organizational complexity, as well as Event Sourcing and CQRS architectures to manage data.</li>
+                  <li>Led frontend development to render components in the sign up process, posts, and administrator view</li>
                 </ul>
               </div>
+              <div style="max-width: 40%; padding: 20px;">
+                <img src="Assets/Universitea.png" width="100%">
+              </div>
+              
             </div>
           </div>
 
           <div class="scroll-in-container-4">
             <div class="scroll-in-container">
+              <div style="max-width: 40%; padding: 20px;">
+                <img src="Assets/CalgaryPlanit.png" width="100%">
+              </div>
               <div class="card">
-                <h2>Chat App</h2>
-                <p>A simple chat app with various commands</p>
+                <h2>Calgary PlanIt</h2>
+                <p>A platform for travellers to create an itinerary for their trip to Calgary</p>
                 <ul>
-                  <li>Developed using React and Socket.io.</li>
-                  <li>Implements MVC and Microservices to reduce code base organizational complexity, as well as Event Sourcing and CQRS architectures to manage data.</li>
-                  <li>Led frontend development to render components in the sign up process, posts, and administrator view</li>
+                  <li>Developed with C# and WPF</li>
+                  <li><a href="https://github.com/christinaluser/CalgaryPlanIt" target="_blank">https://github.com/christinaluser/CalgaryPlanIt</a></li>
+                  <li>Managed a group of 5 to develop a high fidelity prototype of the application, focusing on user experience and design</li>
+                  <li>Created low and medium fidelity prototypes using Figma</li>
                 </ul>
               </div>
-              <img src="Assets/chat.png" width="30%">
             </div>
           </div>
+
+          <div class="scroll-in-container-5">
+            <div class="scroll-in-container">
+              <div class="card">
+                <h2>Chat App</h2>
+                <p>A simple chat app with commands to change usernames and display colors. Supports certain emojis and markdown.</p>
+                <ul>
+                  <li>Developed using React and Socket.io.</li>
+                  <li><a href="https://github.com/christinaluser/chat-app" target="_blank">https://github.com/christinaluser/chat-app</a></li>
+                </ul>
+              </div>
+              <div style="max-width: 30%; padding: 20px">
+                <img src="Assets/chat.png" width="100%">
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -124,7 +197,7 @@
 
     </div>
 
-    <a href="#top">
+    <a href="#about">
       <img class="back-to-top" alt="back to top" src="./Assets/ArrowUp.png" width="20">
     </a>
 

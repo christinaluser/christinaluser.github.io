@@ -7,7 +7,7 @@ const animation_observer = new IntersectionObserver(entries => {
   });
 });
 
-for(let i = 1; i < 5; i++)
+for(let i = 1; i < 6; i++)
   animation_observer.observe(document.querySelector(`.scroll-in-container-${i}`));
 
 
