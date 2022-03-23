@@ -231,6 +231,69 @@ a {
  */
 
 
+.exp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.exp img {
+  border-radius: 100%;
+  max-width: 80px;
+  max-height: 80px;
+  margin: 10px;
+}
+
+.exp img.left {
+  margin-right: 15px;
+}
+
+.exp img.right {
+  margin-left: 15px;
+}
+
+.chat-bubble {
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1); 
+  height: 100%;
+  background-color: white;
+}
+
+.chat-bubble.left::before {
+  content: "";
+  position: relative;
+  top: 20px;
+  right: 15px;
+  height: 20px;
+  width: 20px;
+  background: inherit;
+  box-sizing: border-box;
+  transform: rotate(45deg) translate(-50%);
+  display: block;
+}
+
+.chat-bubble.right::before {
+  content: "";
+  position: relative;
+  top: 20px;
+  left: calc(100% + 10px);
+  height: 20px;
+  width: 20px;
+  background: inherit;
+  box-sizing: border-box;
+  transform: rotate(45deg) translate(-50%);
+  display: block;
+}
+
+.chat-time {
+  float: right;
+  margin: 10px;
+}
+
 .project h2 {
   margin: 5px;
   word-break: break-all;
@@ -275,7 +338,10 @@ a {
   border-radius: 3px;
   padding: 10px 15px;
   margin: 10px;
-  word-break: break-all;
+  /* word-break: break-all; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .project-description {
@@ -293,4 +359,16 @@ a {
   align-self: center;
   margin: 10px;
   border: 1px solid lightgrey;
+}
+
+.button {
+  background-color: #e9dde9;
+  border-radius: 3px;
+  align-self: center;
+  padding: 10px;
+  border: 1px solid darkslategray;
+}
+
+.button:hover {
+  background-color: thistle;
 }
