@@ -85,6 +85,7 @@ a {
   top: 0;
   /* border-bottom: 1px solid darkslategray; */
   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+  z-index: 1000;
 }
 
 .nav-button {
@@ -274,6 +275,7 @@ a {
   box-sizing: border-box;
   transform: rotate(45deg) translate(-50%);
   display: block;
+  z-index: inherit;
 }
 
 .chat-bubble.right::before {
@@ -287,6 +289,7 @@ a {
   box-sizing: border-box;
   transform: rotate(45deg) translate(-50%);
   display: block;
+  z-index: inherit;
 }
 
 .chat-time {
